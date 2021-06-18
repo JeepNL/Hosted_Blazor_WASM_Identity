@@ -2,12 +2,14 @@
 
 ![Blazor WASM Identity Template Screenshot](Screenshot.jpg)
 
-
 Code copied from [Chris Sainty's blog](https://chrissainty.com/securing-your-blazor-apps-authentication-with-clientside-blazor-using-webapi-aspnet-core-identity/): "**Securing Your Blazor Apps (Part 2/3/4)**"
 
 **Changes:**
- * Updated to use ASP.NET Core 6 Preview 4
+ * Updated to use .NET 6 Preview 4
  * Furthermore this template uses a SQLite Database (which is included in the repo) instead of SQLServer
+
+**Change log:**
+ * Jun 18, 2021 - Updated to .NET 6 preview 5
 
 Be sure to check out Chris Sainty's book "Blazor in Action". This book is an example-driven guide to building client-side web apps using C# and .NET - and now [available to buy](https://www.manning.com/books/blazor-in-action?utm_source=sainty&utm_medium=affiliate&utm_campaign=book_sainty_blazor_10_7_20&a_aid=sainty&a_bid=a0dc2c45) via the Manning Early Access Program (MEAP).
 

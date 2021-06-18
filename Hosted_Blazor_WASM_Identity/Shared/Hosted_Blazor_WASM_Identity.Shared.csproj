@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="6.0.0-preview.4.21253.5" />
-    <!--<PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />-->
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="6.0.0-preview.5.21301.17" />
   </ItemGroup>
 </Project>
