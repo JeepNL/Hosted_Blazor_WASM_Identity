@@ -4,6 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Hosted_Blazor_WASM_Identity.Server.Models;
 using Hosted_Blazor_WASM_Identity.Shared.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,10 @@ namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 	public class LoginController : ControllerBase
 	{
 		private readonly IConfiguration _configuration;
-		private readonly SignInManager<IdentityUser> _signInManager;
+		private readonly SignInManager<ApplicationUser> _signInManager;
 
 		public LoginController(IConfiguration configuration,
-							   SignInManager<IdentityUser> signInManager)
+							   SignInManager<ApplicationUser> signInManager)
 		{
 			_configuration = configuration;
 			_signInManager = signInManager;

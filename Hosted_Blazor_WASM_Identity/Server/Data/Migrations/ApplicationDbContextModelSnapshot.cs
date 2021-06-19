@@ -116,6 +116,22 @@ namespace Hosted_Blazor_WASM_Identity.Server.Data.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "e5bb4463-a104-4fd5-81e9-b28e574685c0",
+                            ConcurrencyStamp = "8ce352bf-7139-4828-baf3-7ed3ccfdf1c3",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        },
+                        new
+                        {
+                            Id = "a7b82d0d-7f54-4bcb-857e-ba23aa86fd54",
+                            ConcurrencyStamp = "9f62cd6f-01e0-444f-8192-b31aef64f9fa",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

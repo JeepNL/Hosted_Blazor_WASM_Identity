@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using Hosted_Blazor_WASM_Identity.Server.Models;
 using Hosted_Blazor_WASM_Identity.Shared.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,9 +13,9 @@ namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 	{
 		private static UserModel LoggedOutUser = new() { IsAuthenticated = false };
 
-		private readonly UserManager<IdentityUser> _userManager;
+		private readonly UserManager<ApplicationUser> _userManager;
 
-		public AccountsController(UserManager<IdentityUser> userManager)
+		public AccountsController(UserManager<ApplicationUser> userManager)
 		{
 			_userManager = userManager;
 		}
@@ -22,7 +23,7 @@ namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Post([FromBody] RegisterModel model)
 		{
-			var newUser = new IdentityUser { UserName = model.Email, Email = model.Email };
+			var newUser = new ApplicationUser { UserName = model.Email, Email = model.Email };
 
 			var result = await _userManager.CreateAsync(newUser, model.Password);
 
