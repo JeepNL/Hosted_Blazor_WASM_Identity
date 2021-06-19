@@ -1,23 +1,3 @@
-.
-
-.
-
-.
-
-====================================================================================
-
-**OOPS! I made an error adding additional IdentityUser fields**
-
-**Tomorrow, Sunday, June 20th, I'll update this.**
-
-====================================================================================
-
-.
-
-.
-
-.
-
 **Kestrel Hosted Blazor WASM + Microsoft Identity / JWT Template with Roles & Policies.**
 
 ![Blazor WASM Identity Template Screenshot](Screenshot.jpg)
