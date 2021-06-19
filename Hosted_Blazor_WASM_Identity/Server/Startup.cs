@@ -57,11 +57,11 @@ namespace Hosted_Blazor_WASM_Identity.Server
 			});
 
 			//services.AddMvc().AddNewtonsoftJson();
-			services.AddResponseCompression(opts =>
-			{
-				opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
-					new[] { "application/octet-stream" });
-			});
+			//services.AddResponseCompression(opts =>
+			//{
+			//	opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+			//		new[] { "application/octet-stream" });
+			//});
 
 			services.AddControllersWithViews();
 			services.AddRazorPages();
