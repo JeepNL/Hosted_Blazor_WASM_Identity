@@ -1,4 +1,3 @@
-using System.Linq;
 using System.Text;
 using Hosted_Blazor_WASM_Identity.Server.Data;
 using Hosted_Blazor_WASM_Identity.Server.Models;
@@ -7,7 +6,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -57,15 +55,7 @@ namespace Hosted_Blazor_WASM_Identity.Server
 				config.AddPolicy(Policies.IsUser, Policies.IsUserPolicy());
 			});
 
-			//services.AddMvc().AddNewtonsoftJson();
-			//services.AddResponseCompression(opts =>
-			//{
-			//	opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
-			//		new[] { "application/octet-stream" });
-			//});
-
-			services.AddControllersWithViews();
-			services.AddRazorPages();
+			services.AddControllers();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,7 +84,6 @@ namespace Hosted_Blazor_WASM_Identity.Server
 
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapRazorPages();
 				endpoints.MapControllers();
 				endpoints.MapFallbackToFile("index.html");
 			});

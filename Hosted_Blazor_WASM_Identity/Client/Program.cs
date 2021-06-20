@@ -8,13 +8,6 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-
-using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
-
-using Microsoft.Extensions.Configuration;
-
-
-
 namespace Hosted_Blazor_WASM_Identity.Client
 {
 	public class Program

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 using Hosted_Blazor_WASM_Identity.Server.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -20,7 +21,6 @@ namespace Hosted_Blazor_WASM_Identity.Server.Data
 	///
 	/// Update-Database
 	///
-
 
 	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 	{

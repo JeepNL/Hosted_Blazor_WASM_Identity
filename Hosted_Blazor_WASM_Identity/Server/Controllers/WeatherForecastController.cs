@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Hosted_Blazor_WASM_Identity.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -25,6 +25,7 @@ namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 		}
 
 		[HttpGet]
+		[Authorize(Policy = Policies.IsAdmin)]
 		public IEnumerable<WeatherForecast> Get()
 		{
 			var rng = new Random();
