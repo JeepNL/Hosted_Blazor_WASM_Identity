@@ -13,12 +13,13 @@ Code copied from [Chris Sainty's blog](https://chrissainty.com/securing-your-bla
    * except for `Microsoft.AspNetCore.Authentication.JwtBearer`, it has [a bug](https://github.com/dotnet/aspnetcore/issues/33634)
  * Jun 19, 2021 - Added a couple of additional IdentityUser Fields 
    * /Server/Models/[ApplicationUser.cs](https://github.com/JeepNL/Hosted_Blazor_WASM_Identity/blob/master/Hosted_Blazor_WASM_Identity/Server/Models/ApplicationUser.cs) & DB Migration
+ * Jun 20, 2021 - Code Cleanup 
 
-Be sure to check out Chris Sainty's book "Blazor in Action". This book is an example-driven guide to building client-side web apps using C# and .NET - and now [available to buy](https://www.manning.com/books/blazor-in-action?utm_source=sainty&utm_medium=affiliate&utm_campaign=book_sainty_blazor_10_7_20&a_aid=sainty&a_bid=a0dc2c45) via the Manning Early Access Program (MEAP).
+Be sure to check out Chris Sainty's book "**Blazor in Action**". This book is an example-driven guide to building client-side web apps using C# and .NET - and now [available to buy](https://www.manning.com/books/blazor-in-action?utm_source=sainty&utm_medium=affiliate&utm_campaign=book_sainty_blazor_10_7_20&a_aid=sainty&a_bid=a0dc2c45) via the Manning Early Access Program (MEAP).
 
-This template uses Microsoft Identity so you'll get all of the Microsoft Identity Database Tables with normalized fields, security stamps & password hashing etc. etc.
+This template uses Microsoft Identity (__which is not IdentityServer__) so you'll get all of the Microsoft Identity Database Tables with normalized fields, security stamps & password hashing etc. etc.
 
-With this you don't need IdentityServer4/5..(11😉) for Hosted Blazor WASM anymore, plus authorization & authentication is done in the Blazor Client App itself (with a REST API/JSON to the server)), it doesn't redirect you to the IdentityServer (Areas/Identity) Register/Login Razor Pages on the server. (_What was that?!_)
+With this you don't need IdentityServer4/5.. for Hosted Blazor WASM anymore, plus authorization & authentication is done in the Blazor Client App itself (with a REST API/JSON to the server)), it doesn't redirect you to the IdentityServer (Areas/Identity) Register/Login Razor Pages on the server.
 
 **User/Login Information:**
 
