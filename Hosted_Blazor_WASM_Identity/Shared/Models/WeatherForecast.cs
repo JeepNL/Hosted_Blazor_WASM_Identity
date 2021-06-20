@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Hosted_Blazor_WASM_Identity.Shared
+namespace Hosted_Blazor_WASM_Identity.Shared.Models
 {
 	public class WeatherForecast
 	{

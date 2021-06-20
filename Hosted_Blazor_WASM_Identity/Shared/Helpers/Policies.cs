@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Hosted_Blazor_WASM_Identity.Shared
+namespace Hosted_Blazor_WASM_Identity.Shared.Helpers
 {
 	public static class Policies
 	{

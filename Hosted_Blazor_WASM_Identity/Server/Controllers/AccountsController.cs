@@ -11,7 +11,7 @@ namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 	[ApiController]
 	public class AccountsController : ControllerBase
 	{
-		private static UserModel LoggedOutUser = new() { IsAuthenticated = false };
+		private static readonly UserModel LoggedOutUser = new() { IsAuthenticated = false };
 
 		private readonly UserManager<ApplicationUser> _userManager;
 

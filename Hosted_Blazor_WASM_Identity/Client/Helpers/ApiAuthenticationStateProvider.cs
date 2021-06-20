@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Authorization;
 
-namespace Hosted_Blazor_WASM_Identity.Client
+namespace Hosted_Blazor_WASM_Identity.Client.Helpers
 {
 	public class ApiAuthenticationStateProvider : AuthenticationStateProvider
 	{
@@ -82,7 +82,7 @@ namespace Hosted_Blazor_WASM_Identity.Client
 			return claims;
 		}
 
-		private byte[] ParseBase64WithoutPadding(string base64)
+		private static byte[] ParseBase64WithoutPadding(string base64)
 		{
 			switch (base64.Length % 4)
 			{

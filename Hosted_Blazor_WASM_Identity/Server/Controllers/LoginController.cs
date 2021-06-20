@@ -36,9 +36,10 @@ namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 
 			var user = await _signInManager.UserManager.FindByEmailAsync(login.Email);
 			var roles = await _signInManager.UserManager.GetRolesAsync(user);
-			var claims = new List<Claim>();
-
-			claims.Add(new Claim(ClaimTypes.Name, login.Email));
+			var claims = new List<Claim>
+			{
+				new Claim(ClaimTypes.Name, login.Email)
+			};
 
 			foreach (var role in roles)
 			{

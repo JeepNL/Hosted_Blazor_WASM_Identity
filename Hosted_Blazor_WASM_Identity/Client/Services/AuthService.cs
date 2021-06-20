@@ -4,6 +4,7 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Blazored.LocalStorage;
 using Hosted_Blazor_WASM_Identity.Shared.Models;
+using Hosted_Blazor_WASM_Identity.Client.Helpers;
 using Microsoft.AspNetCore.Components.Authorization;
 
 namespace Hosted_Blazor_WASM_Identity.Client.Services

@@ -1,7 +1,7 @@
 using System.Text;
 using Hosted_Blazor_WASM_Identity.Server.Data;
 using Hosted_Blazor_WASM_Identity.Server.Models;
-using Hosted_Blazor_WASM_Identity.Shared;
+using Hosted_Blazor_WASM_Identity.Shared.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
