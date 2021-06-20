@@ -17,7 +17,7 @@ Code copied from [Chris Sainty's blog](https://chrissainty.com/securing-your-bla
 
 Be sure to check out Chris Sainty's book "**Blazor in Action**". This book is an example-driven guide to building client-side web apps using C# and .NET - and now [available to buy](https://www.manning.com/books/blazor-in-action?utm_source=sainty&utm_medium=affiliate&utm_campaign=book_sainty_blazor_10_7_20&a_aid=sainty&a_bid=a0dc2c45) via the Manning Early Access Program (MEAP).
 
-This template uses Microsoft Identity (__which is not IdentityServer__) so you'll get all of the Microsoft Identity Database Tables with normalized fields, security stamps & password hashing etc. etc.
+This template uses Microsoft Identity (_which is not IdentityServer_) so you'll get all of the Microsoft Identity Database Tables with normalized fields, security stamps & password hashing etc. etc.
 
 With this you don't need IdentityServer4/5.. for Hosted Blazor WASM anymore, plus authorization & authentication is done in the Blazor Client App itself (with a REST API/JSON to the server)), it doesn't redirect you to the IdentityServer (Areas/Identity) Register/Login Razor Pages on the server.
 
