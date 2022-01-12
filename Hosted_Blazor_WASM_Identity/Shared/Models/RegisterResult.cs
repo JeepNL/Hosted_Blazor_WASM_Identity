@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Hosted_Blazor_WASM_Identity.Shared.Models
+﻿namespace Hosted_Blazor_WASM_Identity.Shared.Models
 {
 	public class RegisterResult
 	{

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Hosted_Blazor_WASM_Identity.Shared.Helpers;
 using Hosted_Blazor_WASM_Identity.Shared.Models;
-using Hosted_Blazor_WASM_Identity.Shared.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace Hosted_Blazor_WASM_Identity.Server.Controllers
 {

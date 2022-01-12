@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using Hosted_Blazor_WASM_Identity.Shared.Models;
+﻿using Hosted_Blazor_WASM_Identity.Shared.Models;
 
 namespace Hosted_Blazor_WASM_Identity.Client.Services
 {
